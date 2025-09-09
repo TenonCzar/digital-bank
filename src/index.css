@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+body{
+  color: #2d314d;
+  overflow-x: hidden;
+  background: #fafafa;
+}
+
+.greengrad, button {
+  background: linear-gradient(to bottom, #32d25d, hsl(192, 69%, 51%));
+  color: #fff;
+  font-weight: 700;
+}
+
+button:hover{
+  opacity: 70%;
+}
+
+.footerbtn:hover{
+  opacity: 100%;
+  background: #adfbc3;
+}
+
+.bgmobile {
+  background: url(./assets/bg-intro-mobile.svg) no-repeat;
+  background-size: contain;
+}
+.grey6{
+  color:#9698a6
+}
+.grey50{
+  color: #fafafa;
+}
+
+.grey100{
+  color: #f3f4f6;
+}
+.button, button{
+  cursor: pointer;
+}
+
+.right a:hover, .left a:hover{
+color: #32d25d;
+}
+@media (min-width: 46rem) {
+  .bgmobile {
+    background: url(./assets/bg-intro-desktop.svg) no-repeat;
+    background-size: contain;
+  }
+}
